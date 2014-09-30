@@ -23,4 +23,20 @@ describe('fetchPage', function() {
     });
   });
 
+  it("should return the status code as second element", function(done) {
+    fetchPage("http://localhost:9000", function(data) {
+      assert.equal(200, data[1]);
+      done();
+    });
+  });
+
+  it("should return the response body size as third element", function(done) {
+    fetchPage("http://localhost:9000", function(data) {
+      var responseSize = 'Hello World\n'.length;
+      assert.equal(responseSize, data[2]);
+      done();
+    });
+  });
+
+
 });
