@@ -9,7 +9,7 @@ describe("anync", function() {
       } else {
         throw Error("whoa!");
       }
-    })
+    });
   });
 
 
