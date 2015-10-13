@@ -1,10 +1,10 @@
 var fetchPage = require('./fetch-page');
 
 var sites = [
-  "http://yahoo.com",
   "http://amazon.com",
+  "http://apple.com",
   "http://google.com",
-  "http://apple.com"
+  "http://yahoo.com"
 ];
 
 sites.forEach(function(site) {
