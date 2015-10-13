@@ -15,4 +15,4 @@ describe("Array", function() {
 
   });
 
-})
+});
