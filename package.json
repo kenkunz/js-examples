@@ -1,0 +1,19 @@
+{
+  "name": "js-examples",
+  "version": "1.0.0",
+  "description": "JS Crash Course unit testing examples",
+  "author": "Ken Kunz",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.53.0",
+    "sinon": "^1.12.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenkunz/js-examples.git"
+  }
+}
