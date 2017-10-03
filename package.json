@@ -5,8 +5,8 @@
   "author": "Ken Kunz",
   "license": "MIT",
   "dependencies": {
-    "request": "^2.53.0",
-    "sinon": "^1.12.2"
+    "request": "^2.83.0",
+    "sinon": "^4.0.0"
   },
   "devDependencies": {},
   "scripts": {
