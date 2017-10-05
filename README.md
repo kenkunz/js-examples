@@ -30,4 +30,4 @@ Code licensed under [The MIT License (MIT)](http://opensource.org/licenses/MIT)
 
 Content licensed under [Creative Commons Attribution 3.0](http://creativecommons.org/licenses/by/3.0/)
 
-Copyright &copy; 2017 Ken Kunz
+Copyright &copy; 2015 Ken Kunz
