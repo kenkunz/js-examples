@@ -1,10 +1,10 @@
-var assert = require('assert');
-var fetchPage = require('../fetch-page');
-var http = require('http');
-var sinon = require('sinon');
+const assert = require('assert');
+const fetchPage = require('../fetch-page');
+const http = require('http');
+const sinon = require('sinon');
 
 describe('fetchPage', function() {
-  var server, clock;
+  let server, clock;
 
   beforeEach(function() {
     server = http.createServer(function (req, res) {

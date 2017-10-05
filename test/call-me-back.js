@@ -20,11 +20,8 @@ describe("callMeBack", function() {
   describe("async", function() {
     it("should call the callback with 1", function(done) {
       callMeBack.async(function(val) {
-        if (val === 1) {
-          done();
-        } else {
-          throw Error("whoa!");
-        }
+        assert.equal(1, val);
+        done();
       });
     });
   });
