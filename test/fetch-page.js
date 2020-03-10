@@ -20,35 +20,30 @@ describe('fetchPage', function() {
     clock.restore();
   });
 
-  it("should return the url as the first array element", function(done) {
-    fetchPage("http://localhost:9000").then((data) => {
+  it("should return the url as the first array element", function() {
+    return fetchPage("http://localhost:9000").then((data) => {
       assert.equal("http://localhost:9000", data[0]);
-      done();
     });
   });
 
-  it("should return the status code as second element", function(done) {
-    fetchPage("http://localhost:9000").then((data) => {
+  it("should return the status code as second element", function() {
+    return fetchPage("http://localhost:9000").then((data) => {
       assert.equal(200, data[1]);
-      done();
     });
   });
 
-  it("should return the response body size as third element", function(done) {
-    fetchPage("http://localhost:9000").then((data) => {
+  it("should return the response body size as third element", function() {
+    return fetchPage("http://localhost:9000").then((data) => {
       var responseSize = 'Hello World\n'.length;
       assert.equal(responseSize, data[2]);
-      done();
     });
   });
 
-  it("should return the elapsed request time in seconds as fourth element", function(done) {
-    fetchPage("http://localhost:9000").then((data) => {
+  it("should return the elapsed request time in seconds as fourth element", function() {
+    const fetchPromise = fetchPage("http://localhost:9000").then((data) => {
       assert.equal(1.25, data[3]);
-      done();
     });
-
     clock.tick(1250);
+    return fetchPromise;
   });
-
 });
