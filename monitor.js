@@ -8,7 +8,7 @@ const sites = [
 ];
 
 sites.forEach(site => {
-  fetchPage(site, data => {
+  fetchPage(site).then((data) => {
     console.log( data.join("\t") );
   });
 });
