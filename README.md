@@ -6,17 +6,13 @@ JS unit testing examples used in [JavaScript Crash Course](https://github.com/ke
 
 Install [node.js](https://nodejs.org/)
 
-Install [Mocha](https://mochajs.org/) globally
-
-    $ npm install --global mocha
-
 Install local package dependencies (from project directory)
 
     $ npm install
 
 Run the tests! (from project directory)
 
-    $ mocha
+    $ npm test
 
 Run the `monitor` script
 
