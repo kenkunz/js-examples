@@ -1,5 +1,5 @@
-const assert = require('assert');
-const callMeBack = require('../call-me-back');
+import assert from 'assert';
+import callMeBack from '../call-me-back.js';
 
 describe("callMeBack", () => {
 

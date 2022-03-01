@@ -1,6 +1,6 @@
-const axios = require('axios');
+import axios from 'axios';
 
-module.exports = function fetchPage(url, callback) {
+export default function fetchPage(url, callback) {
   return new Promise((resolve, reject) => {
     const t0 = new Date();
     axios.get(url)

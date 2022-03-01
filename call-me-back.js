@@ -1,11 +1,9 @@
-module.exports = {
-  sync: function(callback) {
+export default {
+  sync(callback) {
     callback(1);
   },
 
-  async: function(callback) {
-    setTimeout(function() {
-      callback(1);
-    }, 0);
+  async(callback) {
+    setTimeout(() => callback(1));
   }
-}
+};

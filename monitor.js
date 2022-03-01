@@ -1,4 +1,4 @@
-const fetchPage = require('./fetch-page');
+import fetchPage from './fetch-page';
 
 const sites = [
   "http://amazon.com",
