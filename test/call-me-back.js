@@ -8,7 +8,7 @@ describe("callMeBack", () => {
     it("should call the callback with 1", () => {
       let returnVal;
 
-      callMeBack.sync(function(val) {
+      callMeBack.sync((val) => {
         returnVal = val;
       });
 
@@ -18,11 +18,10 @@ describe("callMeBack", () => {
 
   describe("async", () => {
     it("should call the callback with 1", (done) => {
-      callMeBack.async(function(val) {
+      callMeBack.async((val) => {
         assert.equal(1, val);
         done();
       });
     });
   });
-
 });
