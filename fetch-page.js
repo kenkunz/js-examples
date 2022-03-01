@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export default function fetchPage(url, callback) {
+export default function fetchPage(url) {
   return new Promise((resolve, reject) => {
     const t0 = new Date();
     axios.get(url)

@@ -1,14 +1,14 @@
-import fetchPage from './fetch-page';
+import fetchPage from './fetch-page.js';
 
 const sites = [
-  "http://amazon.com",
-  "http://apple.com",
-  "http://google.com",
-  "http://yahoo.com"
+  'http://amazon.com',
+  'http://apple.com',
+  'http://google.com',
+  'http://yahoo.com'
 ];
 
-sites.forEach(site => {
+for (const site of sites) {
   fetchPage(site).then((data) => {
-    console.log( data.join("\t") );
+    console.log( data.join('\t') );
   });
-});
+}
