@@ -6,7 +6,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "axios": "^0.26.0",
+    "axios": "^1.6.0",
     "mocha": "^9.2.1",
     "sinon": "^13.0.1"
   },
